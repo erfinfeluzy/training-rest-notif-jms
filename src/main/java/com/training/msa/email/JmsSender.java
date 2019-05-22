@@ -1,4 +1,4 @@
-package com.training.msa.config.jms;
+package com.training.msa.email;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -18,7 +18,7 @@ public class JmsSender {
 	
 	public void sendEmailMessage(Email email) {
 		jmsTemplate.setMessageConverter(jacksonMessageConverter);
-		jmsTemplate.convertAndSend("q.mailbox", email);
+		jmsTemplate.convertAndSend("q.email", email);
 	}
 	
 }

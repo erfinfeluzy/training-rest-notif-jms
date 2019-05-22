@@ -1,4 +1,4 @@
-package com.training.msa.config.jms;
+package com.training.msa.email;
 
 public class Email {
 
