@@ -16,7 +16,7 @@ public class IndexController {
 		
 		System.out.println("index controller");
 		
-		String result = helloMessage + " Erfin";
+		String result = helloMessage + " Mas Asep";
 		
 		return result;
 	}
