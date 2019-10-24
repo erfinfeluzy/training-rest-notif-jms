@@ -1,6 +1,7 @@
 package com.training.msa.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,9 +20,15 @@ public class NotificationRestController {
 		
 		System.out.println("masuk: " + email.getBody());
 		
-		jmsSender.sendEmailMessage(email);
+		sendEmailAsync(email);
 		
 		return email;
+	}
+	
+	
+	@Async
+	private void sendEmailAsync(Email email) {
+		jmsSender.sendEmailMessage(email);
 	}
 	
 }
