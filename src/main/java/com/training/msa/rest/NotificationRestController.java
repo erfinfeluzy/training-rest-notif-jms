@@ -1,4 +1,4 @@
-package com.training.msa.config.rest;
+package com.training.msa.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
