@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.training.msa</groupId>
-	<artifactId>activemq-embed</artifactId>
+	<artifactId>efeluzy-redhat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 
@@ -51,6 +51,8 @@
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-broker</artifactId>
 		</dependency>
+		
+		<!-- json parser -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -71,6 +73,7 @@
 			<version>2.9.2</version>
 		</dependency>
 
+		<!-- Swagger UI -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
